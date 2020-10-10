@@ -43,30 +43,36 @@ color: var(--main-white)
 #projects {
     height: 100vh;
     background-color: var(--main-blue);
-}
-
-#projects h3 {
-    text-align: center;
-    font-size: 40px;
-    padding: 30px;
-}
-
-#project-tile-container {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin: 200px;
-    padding: 40px;
+    align-items: center;
+    flex-direction: column;
 }
 
-.project-tile {
-    margin: 50px;
-    padding: 40px;
-
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3%;
 }
-.img-div img {
-    width: 200%;
+.card {
+    background-color: var(--main-white);
+    width: 40rem;
+    height: 30rem;
+    color: var(--main-gray);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
+.card-project-name-box {
+    background-color: var(--main-gray);
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    color: var(--main-red);
+}
 
-
+#projects h2 {
+    margin: 80px;
+    font-size: 40px;
+}
