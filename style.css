@@ -51,13 +51,17 @@ color: var(--main-white)
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3%;
+    grid-template-columns: repeat(auto-fit, minmax(320, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
 }
 .card {
     background-color: var(--main-white);
-    width: 40rem;
-    height: 30rem;
+    width: 20em;
+    height: 15em;
     color: var(--main-gray);
     display: flex;
     align-items: flex-end;
