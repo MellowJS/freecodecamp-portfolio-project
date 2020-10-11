@@ -5,20 +5,15 @@
     --main-gray: #303841;
 }
 
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
-
-
-
 body {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-color: var(--main-white)
+color: var(--main-white);
 }
 
 #welcome-section {
@@ -43,29 +38,25 @@ color: var(--main-white)
 #projects {
     height: 100vh;
     background-color: var(--main-blue);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-row: 2;
+    grid-template-rows: 260px 1fr;
+    justify-items: center;
 }
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320, 1fr));
-    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
+    justify-items: center;
 }
 .card {
     background-color: var(--main-white);
     width: 20em;
-    height: 15em;
+    height: 20em;
     color: var(--main-gray);
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
 
 .card-project-name-box {
@@ -79,4 +70,13 @@ color: var(--main-white)
 #projects h2 {
     margin: 80px;
     font-size: 40px;
+}
+
+.card-img-box {
+    height: 100%;
+}
+.card-img-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
