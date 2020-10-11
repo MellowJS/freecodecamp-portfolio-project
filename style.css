@@ -16,6 +16,28 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 color: var(--main-white);
 }
 
+
+header {
+    background-color: var(--main-red);
+    width: 100%;
+    min-height: 100px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    padding: 20px 50px;
+}
+
+
 #welcome-section {
     height: 100vh;
     display: flex;
@@ -35,6 +57,12 @@ color: var(--main-white);
     color: var(--main-red);
     font-weight: 100;
 }
+
+
+
+
+
+
 #projects {
     height: 100vh;
     background-color: var(--main-blue);
