@@ -25,8 +25,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    z-index: 999;
 }
-
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#brand {
+    padding: 20px;
+}
 #navbar ul{
     display: flex;
     justify-content: center;
